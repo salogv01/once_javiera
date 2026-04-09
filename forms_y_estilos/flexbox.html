@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tarjeta de Perfil</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            background: #9b9b9b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .tarjeta {
+            background: white;
+            width: 800px;
+            border-radius: 20px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+
+        }
+
+        .perfil-header {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .perfil-header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .nombre_1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .nombre_2{
+            font-weight: bold;
+            font-size: 20px;
+            margin: 5px;
+        }
+
+        .nombre_3{
+            color: gray;
+            font-size: 14px;
+            margin: 5px;
+        }
+
+        .bio{
+            font-size: 14px;
+            color: #5e5c5c;
+        }
+
+        .estadisticas {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .stad{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+        }
+
+        .estadistica-num{
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .estadistica-text{
+            font-size: 14px;
+            color: gray;
+        }
+
+
+
+        .botones {
+            display: flex;
+            gap: 20px;
+        }
+
+        .botones button{
+            flex: 1;
+            padding:10px;
+            border-radius:15px;
+            border:none;
+            cursor:pointer;
+            font-weight:bold;
+        }
+
+        .seguir, 
+        .mensaje {
+            transition: transform 0.5s, background-color 0.3s ease;
+        }
+
+
+        .seguir{
+            background: #4A5DF9;
+            color: white;
+        }
+
+
+        .mensaje{
+            background:#e5e7eb;
+            color: black;
+        }
+
+        .mensaje:hover{
+            transform: translateY(-2px);
+            background: #bdbfc2;
+
+        }
+
+        .seguir:hover{
+            transform: translateY(-2px);
+            background: #3546c8;
+
+        }
+
+        .miniaturas {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .miniaturas img{
+            width: 120px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px gray;;
+            transition: transform 0.3s ease;
+            margin: 10px 5px 10px;
+        }
+        
+        .miniaturas img:hover{
+            transform: translateY(-5px);
+            box-shadow: 0px 5px 10px gray;
+        }
+
+        
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="tarjeta">
+
+        <!-- Sección superior: avatar + nombre -->
+        <div class="perfil-header">
+            <img src="https://img.freepik.com/vector-premium/retrato-mujer-joven-vector-plano_621660-5470.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+
+            <div class="nombre_1">
+                <span class="nombre_2">Salomé González</span>
+                <span class="nombre_3">@sal0_gv01</span>
+            </div>
+            <!-- Tu código aquí -->
+        </div>
+        <hr>
+
+        <!-- Bio -->
+        <p class="bio">
+            Soy una persona a la que le gusta <strong>leer</strong>, <strong>viajar</strong> y <strong>aprender</strong> cosas nuevas. Me encantan los <strong>deportes</strong> y los <strong>animales</strong>, y siempre estoy buscando inspiración en el mundo que me rodea. En mi tiempo libre, disfruto de la <strong>música</strong> y el <strong>cine</strong>, y me gusta compartir mis <strong>pensamientos</strong> y <strong>experiencias</strong> con los demás a través de las redes sociales.
+        </p>
+
+        <hr>
+
+        <!-- Estadísticas -->
+        <div class="estadisticas">
+            <div class="stad">
+                <span class="estadistica-num">15</span>
+                <span class="estadistica-text">Publicaciones</span>
+            </div>
+            <div class="stad">
+                <span class="estadistica-num">5B</span>
+                <span class="estadistica-text">Seguidores</span>
+            </div>
+            <div class="stad">
+                <span class="estadistica-num">100</span>
+                <span class="estadistica-text">Siguiendo</span>
+            </div>
+            <!-- Tu código aquí -->
+        </div>
+
+        <!-- Botones -->
+        <div class="botones">
+            <button class="seguir">Seguir</button>
+            <button class="mensaje">Mensaje</button>
+            <!-- Tu código aquí -->
+        </div>
+
+        <!-- Miniaturas de proyectos -->
+        <div class="miniaturas">
+            <img class="" src="https://wallpapers.com/images/hd/natural-scenery-pictures-642-x-1200-g8z1k950kdake14f.jpg" alt="" class="img1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdEa1fP7b6wxprvjWcyRnEhvjQ7K1NKsbBtw&s" alt="" >
+            <img src="https://i.pinimg.com/736x/f6/98/0b/f6980b22fc24f47120a1bd84a62dcf84.jpg" alt="">
+            <!-- Tu código aquí -->
+        </div>
+
+    </div>
+
+</body>
+
+</html>
