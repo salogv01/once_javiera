@@ -118,8 +118,8 @@ inspect: comando del navegador que abre las herramientas de desarrollador, permi
 
 
 
-- Salomé González Valencia  
+- Salomé González Valencia
 
-- Tomás Martínez Tangarife  
+- Tomás Martínez Tangarife
 
-- Juan Manuel Muñoz Castro  
+- Juan Manuel Muñoz Castro
